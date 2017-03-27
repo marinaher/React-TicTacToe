@@ -1,6 +1,6 @@
 import React from 'react';
-
 import '../styles/index.css';
+// import ResetButton from './ButtonComponents/ResetButton';
 
 class Header extends React.Component{
   render() {
@@ -9,6 +9,7 @@ class Header extends React.Component{
         <h1 className="tictactoe-title">
           Tic <br/> Tac <br/> Toe
         </h1>
+        {/* <ResetButton /> */}
       </div>
     );
   }
