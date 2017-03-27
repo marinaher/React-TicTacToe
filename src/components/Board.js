@@ -1,9 +1,10 @@
-import React from 'react';
+import React, { Component } from 'react';
 import Helpers from '../helpers';
 import '../styles/index.css';
+import ResetButton from './ButtonComponents/ResetButton';
 import Square from './Square';
 
-class Board extends React.Component {
+class Board extends Component {
   constructor() {
     super();
     this.state = {
@@ -14,9 +15,11 @@ class Board extends React.Component {
 
   handleClick(i) {
     const squares = this.state.squares.slice();
+
     if (Helpers.calculateWinner(squares) || squares[i]) {
       return;
     }
+
     squares[i] = this.state.xIsNext ? 'X' : 'O';
     this.setState({
       squares: squares,
@@ -26,6 +29,13 @@ class Board extends React.Component {
 
   renderSquare(i) {
     return <Square value={this.state.squares[i]} onClick={() => this.handleClick(i)}/>;
+  }
+
+  resetGame() {
+    this.setState({
+      squares: Array(9).fill(null),
+      xIsNext: true
+    });
   }
 
   render() {
@@ -56,6 +66,7 @@ class Board extends React.Component {
           {this.renderSquare(8)}
         </div>
         <div className="status">{status}</div>
+        <ResetButton reset={this.resetGame.bind(this)}/>
       </div>
     );
   }
