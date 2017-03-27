@@ -5,9 +5,6 @@ body {
   padding: 0;
 }
 
-.app-container{
-}
-
 .app-container h2 {
   font-size: 22px;
 }
@@ -16,6 +13,10 @@ body {
   font-size: 50px;
   margin: 0;
   padding-left: 25px;
+}
+
+.display-linebreak {
+  white-space: pre;
 }
 
 ol, ul {
