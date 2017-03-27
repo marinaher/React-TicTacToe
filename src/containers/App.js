@@ -2,14 +2,16 @@ import React, { Component } from 'react';
 import '../styles/App.css';
 
 import Board from '../components/Board';
-import GameTitle from '../components/GameTitle';
 
 class App extends Component {
   render() {
     return (
       <div className="container">
         <div className="gameMenu">
-          <GameTitle />
+          <div className="game-title">
+            <h1>Tic <br/> Tac <br/> Toe</h1>
+          </div>
+
           <Board />
         </div>
       </div>
