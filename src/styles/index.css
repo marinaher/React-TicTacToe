@@ -5,10 +5,6 @@ body {
   padding: 0;
 }
 
-.app-container h2 {
-  font-size: 22px;
-}
-
 .game-title h1 {
   font-size: 50px;
   margin: 0;
@@ -17,10 +13,6 @@ body {
 
 .display-linebreak {
   white-space: pre;
-}
-
-ol, ul {
-  padding-left: 30px;
 }
 
 .game-board {
@@ -55,17 +47,4 @@ ol, ul {
 
 .square:focus {
   outline: none;
-}
-
-.kbd-navigation .square:focus {
-  background: #ddd;
-}
-
-.game {
-  display: flex;
-  flex-direction: row;
-}
-
-.game-info {
-  margin-left: 20px;
 }
