@@ -1,13 +1,13 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-export default class ResetButton extends Component {
-  render() {
-    return(
-      <button
-        className="reset-button"
-        onClick={this.props.reset}>
-        Reset Game
-      </button>
-    );
-  }
+const ResetButton = ({click}) => {
+  return(
+    <button
+      className="reset-button"
+      onClick={click}>
+      Reset Game
+    </button>
+  );
 }
+
+export default ResetButton;

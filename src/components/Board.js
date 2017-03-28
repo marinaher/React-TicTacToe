@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import Helpers from '../helpers';
 import '../styles/index.css';
+import Helpers from '../helpers';
 import ResetButton from './ButtonComponents/ResetButton';
 import Square from './Square';
 
@@ -66,7 +66,7 @@ class Board extends Component {
           {this.renderSquare(8)}
         </div>
         <div className="status">{status}</div>
-        <ResetButton reset={this.resetGame.bind(this)}/>
+        <ResetButton click={this.resetGame.bind(this)}/>
       </div>
     );
   }

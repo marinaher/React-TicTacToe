@@ -1,24 +1,16 @@
-import React, { Component } from 'react';
+import React from 'react';
 import '../styles/index.css';
 
 import Board from '../components/Board';
+import GameTitle from '../components/GameTitle';
 
-class App extends Component {
-  render() {
-    const title = 'Tic \nTac \nToe';
-
+const App = () => {
     return (
       <div className="container">
-        <div className="gameMenu">
-          <div className="game-title">
-            <h1 className="display-linebreak">{title}</h1>
-          </div>
-
+          <GameTitle title='Tic Tac Toe'/>
           <Board />
-        </div>
       </div>
     );
-  }
 }
 
 export default App;

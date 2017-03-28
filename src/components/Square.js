@@ -12,7 +12,7 @@ import React from 'react';
 
 // The above was rewritten to the below because we only needed a function that takes props and returns what should be rendered.
 
-function Square(props) {
+const Square = (props) => {
   return(
     <button
       className="square"
