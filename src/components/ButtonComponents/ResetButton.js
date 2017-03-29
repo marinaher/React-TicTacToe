@@ -5,7 +5,7 @@ const ResetButton = ({click}) => {
     <button
       className="reset-button"
       onClick={click}>
-      Reset Game
+      Start a New Game
     </button>
   );
 }
